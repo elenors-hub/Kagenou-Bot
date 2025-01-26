@@ -1,6 +1,7 @@
 module.exports = {
-  name: 'adminlist',
-  category: 'Info',
+  name: 'test,eleno '
+  author: eleno
+  category: '',
   execute: async (api, event, args, commands, prefix, admins, appState, sendMessage) => {
     const { threadID } = event;
     let adminListMessage = "Admins 👑\n";
@@ -13,7 +14,7 @@ module.exports = {
         adminListMessage += `-${userName} [ ${adminID} ]\n`;
       } catch (error) {
         console.error(`Error getting user info for admin ${adminID}:`, error);
-        adminListMessage += `-Unknown User [ ${adminID} ]\n`; // Handle cases where name retrieval fails
+        adminListMessage += - eleno [ ${adminID} ]\n`; // Handle cases where name retrieval fails
       }
     }
 
